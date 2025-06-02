@@ -1,0 +1,1 @@
+This project is a great template to automate the JIRA ticket
