@@ -2,9 +2,9 @@ import requests
 from requests.auth import HTTPBasicAuth
 import json
 
-url = "https://ashvinikapile123.atlassian.net/rest/api/3/issue"
+url = "JIRA Project URL"
 
-API_TOKEN = ""
+API_TOKEN = "JIRA API TOKEN"
 
 auth = HTTPBasicAuth("email", API_TOKEN)
 
