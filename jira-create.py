@@ -4,9 +4,9 @@ import json
 
 url = "https://ashvinikapile123.atlassian.net/rest/api/3/issue"
 
-API_TOKEN = "ATATT3xFfGF0VF3XtKvure6qTln9tf4nbyKb3d43AI8-yZNWhJMj2jAQbwBjdZfmJVDE0o82B8ydQEcomY3lVj4mcJCbOFdhDEwf0-KzMMJ2ZUbgEPXOM0TO51cskNB2FltQT-erMnamFgKRdOB05w0Fw8-qO0gg29s3bbQxa6rGr3uqBF1ZGn8=C2B37181"
+API_TOKEN = ""
 
-auth = HTTPBasicAuth("ashvinikapile123@gmail.com", API_TOKEN)
+auth = HTTPBasicAuth("email", API_TOKEN)
 
 headers = {
     "Accept" : "application/json",
