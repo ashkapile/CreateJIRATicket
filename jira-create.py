@@ -4,7 +4,8 @@ import json
 
 url = "JIRA Project URL"
 
-auth = HTTPBasicAuth("email", "")
+API_TOKEN = ""
+auth = HTTPBasicAuth("email", "API_TOKEN")
 
 headers = {
     "Accept" : "application/json",
