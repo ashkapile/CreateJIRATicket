@@ -1,11 +1,27 @@
 import requests
 from requests.auth import HTTPBasicAuth
 import json
+import os
+from dotenv import load_dotenv
 
-url = "JIRA Project URL"
+load_dotenv()
 
-API_TOKEN = ""
-auth = HTTPBasicAuth("email", "API_TOKEN")
+email = os.getenv("JIRA_EMAIL")
+
+url = os.getenv("JIRA_URL")
+
+API_TOKEN = os.getenv("JIRA_API_TOKEN")
+
+if not email:
+    raise ValueError("Missing email in .env")
+
+if not url:
+    raise ValueError("Missing url in .env")
+
+if not API_TOKEN:
+    raise ValueError("Missing API Token in .env")
+
+auth = HTTPBasicAuth(email, API_TOKEN)
 
 headers = {
     "Accept" : "application/json",
