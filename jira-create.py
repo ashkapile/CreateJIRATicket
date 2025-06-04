@@ -8,15 +8,15 @@ load_dotenv()
 
 email = os.getenv("JIRA_EMAIL")
 
-url = os.getenv("JIRA_URL")
-
-API_TOKEN = os.getenv("JIRA_API_TOKEN")
-
 if not email:
     raise ValueError("Missing email in .env")
 
+url = os.getenv("JIRA_URL")
+
 if not url:
     raise ValueError("Missing url in .env")
+
+API_TOKEN = os.getenv("JIRA_API_TOKEN")
 
 if not API_TOKEN:
     raise ValueError("Missing API Token in .env")
